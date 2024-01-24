@@ -10,13 +10,12 @@
 </head>
 <body>
     <div class="sidebar">
-        <nav class="sidebar-navigation">
-            <div class="sidebar-logo">
+        <nav class="sidebar__navigation">
+            <div class="sidebar__navigation__logo">
                 <a href="">
                     <img src="./src/assets/icons/logo-spotify.png" alt="Spotify Logo">
                 </a>
             </div>
-            <div class="sidebar-menu-items">
                 <ul>
                     <li>
                         <a href="">
@@ -31,25 +30,38 @@
                         </a>
                     </li>
                 </ul>
-            </div>
         </nav>
-        <div class="sidebar-library">
-            <div class="top-section-library">
-                <div class="sidebar-library-icon-title">
-                    <span class="icon fa-regular fa-folder-open"></span>
+        <div class="library">
+            <div class="library__content">
+                <div class="library__content__btn">
+                    <span class="icon fa fa-regular fa-folder-open"></span>
                     <span class="title-section-library">Sua biblioteca</span>
                 </div>
-                <div class="sidebar-library-icon">
-                    <span class="icon fa-regular fa-plus"></span>
+                <div class="library__content__plus">
+                    <span class="icon fa fa-regular fa-plus"></span>
                 </div>
             </div>
-            <div class="cta-create-playlist">
-                <section>
-                    <span class="title-section-playlist">Crie sua primeira playlist</span>
-                    <span class="text-section-playlist">É fácil, vamos te ajudar.</span>
-                    <button class="btn-cta-create-playlist">Criar playlist</button>
+                <section class="section-playlist">
+                    <div class="section-playlist__content">
+                        <span class="text title">Crie sua primeira playlist</span>
+                        <span class="text subtitle">É fácil, vamos te ajudar.</span>
+                        <button class="section-playlist__btn">Criar playlist</button>
+                    </div>
                 </section>
-            </div>
+        </div>
+        <div class="sidebar-footer">
+            <a href="">Legal</a>
+            <a href="">Centro de Privacidade</a>
+            <a href="">Política de privacidade</a>
+            <a href="">Cookies</a>
+            <a href="">Sobre anúncios</a>
+            <a href="">Acessibilidade</a>
+        </div>
+        <div class="languages">
+            <button class="languages__btn">
+                <span class="icon fa fa-globe"></span>
+                <span>Português do Brasil</span>
+            </button>
         </div>
     </div>
 </body>
