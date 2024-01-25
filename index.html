@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web Player: música para todas as pessoas</title>
-    <link rel="stylesheet" href="/reset.css" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/vars.css" />
+    <link rel="stylesheet" href="./src/styles/sidebar-footer.css" />
+    <link rel="stylesheet" href="./src/styles/main-content.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
-    <main>
+    <div class="sidebar-footer-group">
         <div class="sidebar">
             <nav class="sidebar__navigation">
                 <div class="sidebar__navigation__logo">
@@ -69,15 +71,39 @@
                 </button>
             </div>
         </div>
+    </div>
+
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="./src/assets/icons/small-left.png" alt="Anterior">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="./src/assets/icons/small-right.png" alt="Próximo">
+                    </button>
+                    <div class="header__search">
+                        <img src="./src/assets/icons/search.png" alt="Buscar">
+                        <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?">
+                    </div>
+                    <div class="header__login">
+                        <button class="subscribe">Inscreva-se</button>
+                        <button class="login">Entrar</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </main>
+
     <footer>
-        <div class="footer__content">
-            <div class="footer__content__text">
+        <div class="cta-premium__content">
+            <div class="cta-premium__content__text">
                 <span class="text title">Testar o Premium de graça</span>
                 <span class="text subtitle">Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</span>
             </div>
             <div>
-                <button class="footer__content__btn">Inscreva-se grátis</button>
+                <button class="cta-premium__content__btn">Inscreva-se grátis</button>
             </div>
         </div>
     </footer>
